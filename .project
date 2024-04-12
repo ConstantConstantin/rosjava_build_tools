@@ -6,12 +6,12 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.python.pydev.PyDevBuilder</name>
+			<name>org.python3.pydev.PyDevBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.python.pydev.pythonNature</nature>
+		<nature>org.python3.pydev.pythonNature</nature>
 	</natures>
 </projectDescription>

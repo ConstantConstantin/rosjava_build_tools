@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ##############################################################################
 # Imports
@@ -12,8 +12,13 @@ import catkin_pkg
 from catkin_pkg.package_templates import create_package_xml, PackageTemplate
 
 # local imports
+<<<<<<< HEAD
 from rosjava_build_tools import utils
 from rosjava_build_tools import console
+=======
+import rosjava_build_tools.utils as utils
+import rosjava_build_tools.console as console
+>>>>>>> changing python to python3 and changing dict.iteritems() to python3 method
 
 ##############################################################################
 # Methods

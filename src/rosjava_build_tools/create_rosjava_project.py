@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ##############################################################################
 # Imports
@@ -13,8 +13,8 @@ import argparse
 import xml.etree.ElementTree as ElementTree
 
 # local imports
-from rosjava_build_tools import utils
-from rosjava_build_tools import console
+import rosjava_build_tools.utils as utils
+import rosjava_build_tools.console as console
 
 ##############################################################################
 # Methods

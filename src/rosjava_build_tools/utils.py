@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ##############################################################################
 # Imports
@@ -8,7 +8,11 @@ import os
 import sys
 import errno
 import pwd
+<<<<<<< HEAD
 from rosjava_build_tools import console
+=======
+import rosjava_build_tools.console as console
+>>>>>>> changing python to python3 and changing dict.iteritems() to python3 method
 
 ##############################################################################
 # Methods
@@ -18,7 +22,7 @@ from rosjava_build_tools import console
 def distro_version():
     '''
       This code is pulled from rosversion, which unfortunately has it buried inside
-      the script, not in the python module.
+      the script, not in the python3 module.
     '''
     if 'ROS_DISTRO' in os.environ:
         return os.environ['ROS_DISTRO']
@@ -81,7 +85,7 @@ def author_name():
 
 def mkdir_p(path):
     '''
-      Enables mkdir -p functionality (until python 3.2 is able to use
+      Enables mkdir -p functionality (until python3 3.2 is able to use
       the mode argument to do the same).
     '''
     try:

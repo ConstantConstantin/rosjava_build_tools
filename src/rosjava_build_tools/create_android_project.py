@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ##############################################################################
 # Imports
@@ -11,14 +11,10 @@ import sys
 import argparse
 import subprocess
 import shutil
-try:
-    import exceptions
-except ImportError:
-    import builtins as exceptions
 
 # local imports
-from rosjava_build_tools import utils
-from rosjava_build_tools import console
+import rosjava_build_tools.utils as utils
+import rosjava_build_tools.console as console
 
 ##############################################################################
 # Methods
@@ -50,6 +46,7 @@ def parse_arguments():
     return args
 
 
+
 def actually_create_android_project(package_name, target_version, java_package_name, is_library):
     path = os.path.join(os.getcwd(), package_name.lower())
     console.pretty_println("\nCreating android project ", console.bold)
@@ -75,9 +72,9 @@ def actually_create_android_project(package_name, target_version, java_package_n
     except subprocess.CalledProcessError:
         print("Error")
         raise subprocess.CalledProcessError("failed to create android project.")
-    except exceptions.OSError as e:
+    except OSError as e:
         print("OS error" + str(e))
-        raise exceptions.OSError()
+        raise OSError()
 
     # This is in the old form, let's shovel the shit around to the new form
     utils.mkdir_p(os.path.join(path, 'src', 'main', 'java'))

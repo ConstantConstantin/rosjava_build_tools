@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 ##############################################################################
 # Imports
@@ -40,7 +40,7 @@ def index_message_package_dependencies_from_local_environment(package_name_list=
       be used for sequencing builds of packages.
 
       @param package_name_list : sort dependencies for these packages only (defaults to all if empty)
-      @param package_paths : a python list of ros workspaces (defaults to ROS_PACKAGE_PATH if None is given)
+      @param package_paths : a python3 list of ros workspaces (defaults to ROS_PACKAGE_PATH if None is given)
       @return dict mapping relative path to a catkin_pkg.Package
     '''
     if package_paths is None:
